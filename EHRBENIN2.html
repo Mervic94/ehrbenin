@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EHR — École de l'Hôtellerie et de la Restauration | Bénin</title>
+<meta name="description" content="EHR Abomey-Calavi : école reconnue par l'État béninois. Cuisine, pâtisserie, service, bar-restaurant. 2 ans de formation, stage garanti, diplômes d'État. Rentrée le 17 septembre 2026.">
+<meta name="theme-color" content="#0e2249">
+
+<!-- ===== Partage WhatsApp / Facebook ===== -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="EHR — École de l'Hôtellerie et de la Restauration">
+<meta property="og:description" content="Reconnu par l'État béninois. Cuisine, pâtisserie, service, bar-restaurant. Scolarité 300 000 F en 4 tranches. Rentrée le 17 septembre 2026 !">
+<meta property="og:image" content="images/logo.png">
+<meta property="og:locale" content="fr_FR">
+
+<!-- ===== FAVICON : votre logo officiel ===== -->
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<!-- ===== SEO : FAQ structurée pour Google ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Quelles spécialités sont enseignées à l'EHR ?",
+     "acceptedAnswer":{"@type":"Answer","text":"Quatre filières : Cuisine (arts culinaires), Arts pâtissiers & Boulangerie, Service en restauration et Bar-restaurant."}},
+    {"@type":"Question","name":"Quelle est la durée de la formation ?",
+     "acceptedAnswer":{"@type":"Answer","text":"2 ans de formation générale, puis 1 an de formation en spécialité."}},
+    {"@type":"Question","name":"Combien coûte la formation à l'EHR ?",
+     "acceptedAnswer":{"@type":"Answer","text":"Inscription : 10 000 FCFA. Uniforme : 25 000 FCFA (droit à tous les uniformes). Scolarité : 300 000 FCFA, payable en 4 tranches."}},
+    {"@type":"Question","name":"L'EHR est-elle reconnue par l'État béninois ?",
+     "acceptedAnswer":{"@type":"Answer","text":"Oui. L'EHR est reconnue par l'État béninois et ses élèves peuvent passer les diplômes d'État."}},
+    {"@type":"Question","name":"Y a-t-il des stages en entreprise ?",
+     "acceptedAnswer":{"@type":"Answer","text":"Oui, un stage académique de 3 et 6 mois est prévu, avec des immersions dans nos hôtels et restaurants partenaires."}},
+    {"@type":"Question","name":"Quand commence la prochaine rentrée ?",
+     "acceptedAnswer":{"@type":"Answer","text":"La rentrée est fixée au 17 septembre 2026. Les inscriptions sont déjà ouvertes."}},
+    {"@type":"Question","name":"Comment s'inscrire à l'EHR ?",
+     "acceptedAnswer":{"@type":"Answer","text":"Via le formulaire du site (envoi par email ou WhatsApp), par téléphone au +229 01 92 51 59 59, ou directement au campus à Abomey-Calavi, Womey."}},
+    {"@type":"Question","name":"Où se trouve l'école et comment la contacter ?",
+     "acceptedAnswer":{"@type":"Answer","text":"Abomey-Calavi, Womey, rue de la pharmacie Vallée Beraca, non loin du marché. Tél : +229 01 92 51 59 59. Email : ehr.cika@gmail.com."}}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{
+  --navy:#0e2249; --navy-2:#16346b; --navy-3:#091733;
+  --gold:#d4a017; --gold-2:#f0c75e; --cream:#faf7f0;
+  --text:#2b2f38; --muted:#6b7280; --radius:14px;
+  --shadow:0 10px 30px rgba(14,34,73,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:var(--text);line-height:1.7;background:#fff}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{width:min(1140px,92%);margin-inline:auto}
+h1,h2,h3{font-family:'Playfair Display',serif;color:var(--navy)}
+section{padding:80px 0}
+
+/* ============================================================
+   LOGO OFFICIEL (images/logo.png — fond noir assumé ou fondu)
+============================================================ */
+/* Navbar : badge noir arrondi (élégant sur fond blanc).
+   ➜ SI un jour vous détourez le logo (remove.bg) en logo-transparent.png,
+      remplacez src et appliquez plutôt :
+      .logo-img{height:56px;border-radius:0;mix-blend-mode:multiply;box-shadow:none} */
+.logo-img{height:56px;width:56px;border-radius:12px;object-fit:cover;display:block;
+  box-shadow:0 3px 12px rgba(14,34,73,.28);border:1px solid rgba(212,160,23,.35)}
+
+/* Splash : le fond noir du logo disparaît sur le bleu nuit */
+.splash-logo{width:min(300px,70vw);aspect-ratio:1;object-fit:cover;border-radius:20px;
+  mix-blend-mode:screen;animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.05);opacity:.85}}
+
+/* Filigrane hero : fondu dans le bleu nuit */
+.hero-mark{width:min(400px,52vw);aspect-ratio:1;object-fit:cover;
+  mix-blend-mode:screen;opacity:.12;border-radius:20px}
+
+/* Footer : fondu dans le bleu nuit */
+.footer-logo{width:150px;height:150px;object-fit:cover;border-radius:18px;
+  mix-blend-mode:screen;margin-bottom:14px}
+
+/* ===== Splash conteneur ===== */
+#splash{position:fixed;inset:0;background:var(--navy-3);display:flex;flex-direction:column;
+  gap:26px;align-items:center;justify-content:center;z-index:9999;
+  transition:opacity .6s ease,visibility .6s}
+#splash.hide{opacity:0;visibility:hidden}
+.splash-bar{width:170px;height:3px;background:rgba(255,255,255,.15);border-radius:3px;overflow:hidden}
+.splash-bar span{display:block;height:100%;width:40%;background:var(--gold);
+  border-radius:3px;animation:slide 1.1s ease-in-out infinite}
+@keyframes slide{0%{transform:translateX(-110%)}100%{transform:translateX(420%)}}
+
+/* ===== Barre supérieure ===== */
+.topbar{background:var(--navy-3);color:#cfd6e6;font-size:.85rem;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.topbar i{color:var(--gold-2);margin-right:6px}
+.topbar a:hover{color:var(--gold-2)}
+.topbar .socials a{margin-left:14px}
+
+/* ===== Navigation ===== */
+.navbar{position:sticky;top:0;z-index:100;background:#fff;box-shadow:var(--shadow)}
+.navbar .container{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.nav-links{display:flex;gap:24px;font-weight:500;font-size:.95rem}
+.nav-links a:hover{color:var(--gold)}
+.btn{display:inline-block;background:var(--gold);color:var(--navy-3);font-weight:600;
+  padding:12px 26px;border-radius:50px;transition:.3s;border:2px solid var(--gold);cursor:pointer}
+.btn:hover{background:transparent;color:var(--gold)}
+.btn-outline{background:transparent;color:#fff;border-color:#fff}
+.btn-outline:hover{background:#fff;color:var(--navy)}
+.btn-wa{background:#25d366;border-color:#25d366;color:#fff}
+.btn-wa:hover{background:transparent;color:#25d366}
+.menu-toggle{display:none;font-size:1.5rem;background:none;border:none;color:var(--navy);cursor:pointer}
+
+/* ===== Hero ===== */
+.hero{background:linear-gradient(120deg,var(--navy-3) 0%,var(--navy) 60%,var(--navy-2) 100%);
+  color:#fff;position:relative;overflow:hidden;padding:100px 0 110px}
+.hero::before{content:"";position:absolute;width:640px;height:640px;border-radius:50%;
+  background:radial-gradient(circle,var(--gold) 0%,transparent 70%);opacity:.16;top:-160px;right:-140px}
+.hero .container{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;position:relative;z-index:1}
+.badge{display:inline-block;background:rgba(212,160,23,.18);border:1px solid var(--gold);
+  color:var(--gold-2);padding:7px 18px;border-radius:50px;font-size:.85rem;margin-bottom:20px}
+.hero h1{color:#fff;font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.25;margin-bottom:8px}
+.hero h1 span{color:var(--gold-2)}
+.hero .script{font-family:'Dancing Script',cursive;font-size:1.9rem;color:var(--gold-2);margin-bottom:22px}
+.hero p{color:#dbe2f0;margin-bottom:32px;max-width:520px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+.hero-img{border-radius:20px;overflow:hidden;border:4px solid var(--gold);box-shadow:0 25px 60px rgba(0,0,0,.4)}
+.hero-img img{width:100%;height:100%;object-fit:cover;max-height:560px}
+
+/* ===== Bandeau annonce ===== */
+.ribbon{background:linear-gradient(90deg,var(--gold),var(--gold-2),var(--gold));color:var(--navy-3);
+  text-align:center;padding:16px 10px;font-weight:600}
+.ribbon i{margin-right:10px}
+.ribbon a{background:var(--navy);color:#fff;padding:6px 18px;border-radius:50px;margin-left:14px;font-size:.9rem}
+
+/* ===== Titres de section ===== */
+.sec-head{text-align:center;max-width:640px;margin:0 auto 50px}
+.overline{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-size:.8rem;font-weight:600}
+.sec-head h2{font-size:clamp(1.7rem,3.5vw,2.4rem);margin:8px 0 12px}
+.sec-head p{color:var(--muted)}
+
+/* ===== À propos ===== */
+#apropos{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-grid img{border-radius:var(--radius);box-shadow:var(--shadow)}
+.about-grid h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:18px}
+.checks{list-style:none;margin:18px 0 28px}
+.checks li{padding-left:32px;position:relative;margin-bottom:10px}
+.checks i{position:absolute;left:0;top:5px;color:var(--gold)}
+
+/* ===== Stats ===== */
+.stats{background:var(--navy);color:#fff;padding:55px 0}
+.stats .container{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.stat h3{color:var(--gold-2);font-size:2.3rem}
+.stat p{color:#c7d0e2;font-size:.9rem}
+
+/* ===== Formations ===== */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+  transition:.35s;border:1px solid #eee}
+.card:hover{transform:translateY(-8px)}
+.card img{height:200px;width:100%;object-fit:cover}
+.card-body{padding:24px}
+.card-body .icon{width:52px;height:52px;border-radius:12px;background:var(--navy);color:var(--gold-2);
+  display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin:-50px 0 14px;
+  border:3px solid #fff;position:relative}
+.card h3{font-size:1.25rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.92rem}
+.card .link{display:inline-block;margin-top:14px;color:var(--gold);font-weight:600;font-size:.9rem}
+
+/* ===== Programme & Frais ===== */
+#programme{background:linear-gradient(120deg,var(--navy-3),var(--navy))}
+.prog-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:start}
+.prog-box{background:rgba(255,255,255,.05);border:1px solid rgba(212,160,23,.35);
+  border-radius:var(--radius);padding:30px;color:#dfe6f3}
+.prog-box h3{color:var(--gold-2);font-size:1.15rem;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.duration-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.duration-card{flex:1;min-width:180px;background:rgba(14,34,73,.5);border:1px solid rgba(212,160,23,.3);
+  border-radius:12px;padding:18px;text-align:center}
+.duration-card .num{font-family:'Playfair Display',serif;font-size:2rem;color:var(--gold-2);font-weight:800}
+.duration-card .lbl{font-size:.85rem;color:#b9c4da}
+.prog-list{list-style:none}
+.prog-list li{padding:8px 0 8px 34px;position:relative;border-bottom:1px dashed rgba(255,255,255,.12);font-size:.92rem}
+.prog-list li:last-child{border-bottom:none}
+.prog-list i{position:absolute;left:0;top:10px;color:var(--gold-2)}
+.fee-card{background:#fff;border-radius:12px;padding:22px;margin-bottom:16px;
+  display:flex;align-items:center;gap:18px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.fee-card:last-child{margin-bottom:0}
+.fee-icon{width:50px;height:50px;flex-shrink:0;border-radius:12px;background:var(--cream);
+  display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:var(--gold)}
+.fee-card h4{color:var(--navy);font-size:1rem;font-family:'Poppins',sans-serif;font-weight:600}
+.fee-card .amount{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:800;color:var(--navy)}
+.fee-card small{color:var(--muted);font-size:.8rem;display:block;line-height:1.4}
+.fee-note{margin-top:16px;text-align:center;background:rgba(212,160,23,.12);border:1px dashed var(--gold);
+  border-radius:10px;padding:12px;color:var(--gold-2);font-size:.88rem}
+
+/* ===== Galerie ===== */
+#galerie{background:var(--cream)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.gallery figure{position:relative;border-radius:var(--radius);overflow:hidden;margin:0;box-shadow:var(--shadow)}
+.gallery img{height:230px;width:100%;object-fit:cover;transition:.5s}
+.gallery figure:hover img{transform:scale(1.08)}
+.gallery figcaption{position:absolute;inset:auto 0 0 0;background:linear-gradient(transparent,rgba(9,23,51,.92));
+  color:#fff;padding:30px 16px 14px;font-size:.9rem;font-weight:500}
+
+/* ===== Atouts ===== */
+#atouts{background:var(--navy)}
+#atouts .sec-head h2{color:#fff}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px}
+.feature{background:rgba(255,255,255,.05);border:1px solid rgba(212,160,23,.35);
+  border-radius:var(--radius);padding:32px 24px;text-align:center;transition:.3s}
+.feature:hover{background:rgba(212,160,23,.1);transform:translateY(-5px)}
+.feature i{font-size:2rem;color:var(--gold-2);margin-bottom:16px}
+.feature h3{color:#fff;font-size:1.1rem;margin-bottom:8px}
+.feature p{color:#b9c4da;font-size:.88rem}
+
+/* ===== FAQ ===== */
+#faq{background:var(--cream)}
+.faq-list{max-width:820px;margin:0 auto}
+.faq-item{background:#fff;border:1px solid #e8e2d4;border-radius:12px;margin-bottom:14px;
+  overflow:hidden;box-shadow:var(--shadow);transition:.3s}
+.faq-item[open]{border-color:var(--gold)}
+.faq-item summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;
+  align-items:center;gap:14px;padding:20px 22px;font-weight:600;color:var(--navy);font-size:.98rem}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary .chev{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:var(--cream);
+  border:1px solid var(--gold);color:var(--gold);display:flex;align-items:center;justify-content:center;
+  font-size:.8rem;transition:.3s}
+.faq-item[open] summary .chev{transform:rotate(180deg);background:var(--gold);color:#fff}
+.faq-item .faq-body{padding:0 22px 20px;color:var(--muted);font-size:.92rem}
+.faq-item .faq-body strong{color:var(--navy)}
+.faq-item .faq-body a{color:var(--gold);font-weight:600}
+
+/* ===== Partenaires ===== */
+#partenaires{background:#fff}
+.partners-logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px;margin-bottom:30px}
+.partner-card{background:#fff;border:1px solid #e8e2d4;border-radius:12px;padding:20px;
+  display:flex;align-items:center;justify-content:center;height:130px;
+  box-shadow:var(--shadow);transition:.3s}
+.partner-card img{max-height:90px;max-width:85%;object-fit:contain;transition:.3s}
+.partner-card:hover{border-color:var(--gold);transform:translateY(-4px)}
+.partners{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.partner{background:#fff;border:1px solid #e8e2d4;border-radius:10px;padding:12px 26px;
+  font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);letter-spacing:1px;
+  opacity:.7;transition:.3s;font-size:.95rem}
+.partner:hover{opacity:1;border-color:var(--gold);color:var(--gold)}
+
+/* ===== Contact ===== */
+#contact{background:linear-gradient(120deg,var(--navy-3),var(--navy))}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px}
+.info-card{background:rgba(255,255,255,.06);border:1px solid rgba(212,160,23,.3);
+  border-radius:var(--radius);padding:24px;margin-bottom:18px;display:flex;gap:16px;color:#dfe6f3}
+.info-card i{font-size:1.3rem;color:var(--gold-2);margin-top:4px}
+.info-card h3{color:#fff;font-size:1rem;margin-bottom:4px}
+.info-card a:hover{color:var(--gold-2)}
+.form-box{background:#fff;border-radius:var(--radius);padding:36px;box-shadow:0 25px 60px rgba(0,0,0,.3)}
+.form-box h3{font-size:1.5rem;margin-bottom:6px}
+.form-box>p{color:var(--muted);font-size:.9rem;margin-bottom:22px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-box label{font-size:.85rem;font-weight:500;color:var(--navy)}
+.form-box input,.form-box select,.form-box textarea{width:100%;padding:12px 14px;margin:6px 0 16px;
+  border:1.5px solid #dfe3ec;border-radius:10px;font-family:inherit;font-size:.92rem;background:var(--cream)}
+.form-box input:focus,.form-box select:focus,.form-box textarea:focus{outline:none;border-color:var(--gold)}
+.privacy-note{font-size:.82rem;color:var(--muted);background:var(--cream);
+  border-left:3px solid var(--gold);padding:10px 12px;border-radius:8px;margin-bottom:16px}
+.privacy-note a{color:var(--gold);text-decoration:underline}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.82rem;color:var(--muted);
+  margin:0 0 16px;line-height:1.5;font-weight:400}
+.consent input{width:auto;margin-top:3px;accent-color:var(--gold)}
+.consent a{color:var(--gold);font-weight:500;text-decoration:underline}
+.choice-label{text-align:center;color:var(--muted);font-size:.85rem;margin:6px 0 12px;position:relative}
+.choice-label::before,.choice-label::after{content:"";position:absolute;top:50%;width:32%;height:1px;background:#dfe3ec}
+.choice-label::before{left:0}.choice-label::after{right:0}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn-row .btn{flex:1;text-align:center;min-width:200px}
+
+/* ===== Modales ===== */
+.modal-overlay{position:fixed;inset:0;background:rgba(9,23,51,.78);z-index:3000;
+  display:none;align-items:center;justify-content:center;padding:20px}
+.modal-overlay.open{display:flex}
+.modal{background:#fff;border-radius:16px;max-width:720px;width:100%;max-height:85vh;
+  overflow-y:auto;padding:36px;position:relative}
+.modal h3{font-size:1.4rem;margin-bottom:16px;padding-right:30px}
+.modal h4{color:var(--navy);margin:18px 0 6px;font-size:1rem}
+.modal p,.modal li{font-size:.9rem;color:var(--text)}
+.modal ul{padding-left:20px;margin:6px 0}
+.modal .close{position:absolute;top:14px;right:16px;background:none;border:none;
+  font-size:1.4rem;cursor:pointer;color:var(--muted)}
+.modal .close:hover{color:var(--gold)}
+.modal .apdp{background:var(--cream);border-left:3px solid var(--gold);padding:12px 14px;border-radius:8px;margin-top:14px}
+
+/* ===== Footer ===== */
+footer{background:var(--navy-3);color:#9aa7c2;padding:60px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:40px;padding-bottom:40px}
+footer h3{color:#fff;font-size:1.05rem;margin-bottom:16px}
+footer a:hover{color:var(--gold-2)}
+footer li{list-style:none;margin-bottom:9px}
+footer i{color:var(--gold);margin-right:8px}
+.footer-slogan{font-family:'Dancing Script',cursive;color:var(--gold-2);font-size:1.15rem;margin-top:8px}
+.socials a{display:inline-flex;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.2);
+  align-items:center;justify-content:center;margin-right:10px;transition:.3s}
+.socials a:hover{background:var(--gold);border-color:var(--gold);color:var(--navy-3)}
+.legal-links{margin-top:16px;font-size:.85rem}
+.legal-links a{color:#9aa7c2;text-decoration:underline}
+.legal-links a:hover{color:var(--gold-2)}
+.copy{border-top:1px solid rgba(255,255,255,.1);text-align:center;padding:18px 0;font-size:.83rem}
+
+/* ===== WhatsApp flottant ===== */
+.wa{position:fixed;bottom:24px;right:24px;z-index:200;background:#25d366;color:#fff;
+  width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:1.7rem;box-shadow:0 8px 24px rgba(0,0,0,.3);transition:.3s}
+.wa:hover{transform:scale(1.1)}
+
+/* ===== Animations ===== */
+.reveal{opacity:0;transform:translateY(30px);transition:.7s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* ===== Responsive ===== */
+@media(max-width:900px){
+  .hero .container,.about-grid,.contact-grid,.footer-grid,.prog-grid{grid-template-columns:1fr}
+  .hero-img{order:-1;max-height:340px}
+  .logo-img{height:46px;width:46px;border-radius:10px}
+  .footer-logo{width:120px;height:120px}
+  .stats .container{grid-template-columns:repeat(2,1fr);gap:30px}
+  .form-row{grid-template-columns:1fr}
+  .topbar .socials{display:none}
+  .nav-links{position:fixed;inset:0;background:var(--navy-3);flex-direction:column;
+    align-items:center;justify-content:center;gap:30px;font-size:1.2rem;
+    transform:translateX(100%);transition:.4s}
+  .nav-links.open{transform:none}
+  .menu-toggle{display:block;position:relative;z-index:110}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Splash : LOGO officiel (fondu dans le bleu nuit) ===== -->
+<div id="splash" aria-hidden="true">
+  <img src="images/logo.png" alt="" class="splash-logo">
+  <div class="splash-bar"><span></span></div>
+</div>
+
+<!-- ===== Barre supérieure ===== -->
+<div class="topbar">
+  <div class="container">
+    <div>
+      <a href="tel:+2290192515959"><i class="fa-solid fa-phone"></i>+229 01 92 51 59 59</a>
+      <a href="mailto:ehr.cika@gmail.com" style="margin-left:20px"><i class="fa-solid fa-envelope"></i>ehr.cika@gmail.com</a>
+    </div>
+    <div class="socials">
+      <a href="https://www.facebook.com/ehrbenin" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ehr.benin" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://tiktok.com/@ehrbenin" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://YouTube.com/@EHR-Benin" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Navigation : LOGO officiel en badge ===== -->
+<nav class="navbar">
+  <div class="container">
+    <a href="#accueil" class="logo" aria-label="EHR — Accueil">
+      <img src="images/logo.png" alt="Logo EHR" class="logo-img">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">L'école</a>
+      <a href="#formations">Formations</a>
+      <a href="#programme">Frais & Programme</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="btn" style="padding:10px 22px">S'inscrire</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- ===== Hero : LOGO officiel en filigrane ===== -->
+<header class="hero" id="accueil">
+  <img src="images/logo.png" alt="" class="hero-mark" aria-hidden="true"
+       style="position:absolute;right:-20px;bottom:-10px;z-index:0">
+  <div class="container">
+    <div>
+      <span class="badge"><i class="fa-solid fa-award"></i> Reconnu par l'État béninois — Diplômes d'État</span>
+      <h1>VOTRE CARRIÈRE <span>COMMENCE MAINTENANT</span> !</h1>
+      <div class="script">Les inscriptions ont démarré !</div>
+      <p>Cuisine, pâtisserie & boulangerie, service en restauration, bar-restaurant :
+        rejoignez une école d'excellence — formation de qualité, encadrement professionnel
+        et insertion assurée.</p>
+      <div class="hero-ctas">
+        <a href="#formations" class="btn">Découvrir nos formations</a>
+        <a href="#contact" class="btn btn-outline">Je m'inscris</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <!-- REMPLACER plus tard par : images/hero2.png (photo de groupe en uniformes bleus) -->
+      <img src="images/hero2.png" alt="Élève EHR en formation de service">
+    </div>
+  </div>
+</header>
+
+<!-- ===== Bandeau rentrée ===== -->
+<div class="ribbon">
+  <i class="fa-solid fa-calendar-days"></i>
+  RENTRÉE LE 17 SEPTEMBRE 2026 — Scolarité 300 000 F payable en 4 tranches !
+  <a href="#contact">Réserver ma place</a>
+</div>
+
+<!-- ===== À propos ===== -->
+<section id="apropos">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="overline">Qui sommes-nous</span>
+      <h2>Former aujourd'hui, exceller demain</h2>
+      <p>L'<strong>École de l'Hôtellerie et de la Restauration (EHR)</strong>, située à
+        Abomey-Calavi (Womey), forme la nouvelle génération des professionnels de la
+        restauration au Bénin. Nos apprenants bénéficient d'un encadrement pratique dans
+        des ateliers modernes et d'une immersion réelle auprès de nos partenaires hôteliers.</p>
+      <ul class="checks">
+        <li><i class="fa-solid fa-circle-check"></i> Établissement reconnu par l'État béninois</li>
+        <li><i class="fa-solid fa-circle-check"></i> Possibilité de passer les diplômes d'État</li>
+        <li><i class="fa-solid fa-circle-check"></i> Stage académique de 3 et 6 mois en entreprise</li>
+        <li><i class="fa-solid fa-circle-check"></i> Insertion professionnelle assurée</li>
+      </ul>
+      <a href="#contact" class="btn">Nous contacter</a>
+    </div>
+    <img class="reveal" src="images/formation-service.jpg" alt="Dressage de table — formation service EHR">
+  </div>
+</section>
+
+<!-- ===== Stats ===== -->
+<div class="stats">
+  <div class="container">
+    <div class="stat reveal"><h3>2 ans</h3><p>Formation générale</p></div>
+    <div class="stat reveal"><h3>1 an</h3><p>Formation en spécialité</p></div>
+    <div class="stat reveal"><h3>4</h3><p>Filières professionnelles</p></div>
+    <div class="stat reveal"><h3>3-6 mois</h3><p>Stage académique</p></div>
+  </div>
+</div>
+
+<!-- ===== Formations ===== -->
+<section id="formations">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="overline">Nos spécialités</span>
+      <h2>Quatre filières vers l'emploi</h2>
+      <p>Des programmes pratiques conçus pour rendre nos diplômés immédiatement opérationnels.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <img src="images/formation-art-culinaire.png" alt="Arts culinaires">
+        <div class="card-body">
+          <div class="icon"><i class="fa-solid fa-utensils"></i></div>
+          <h3>Cuisine — Arts culinaires</h3>
+          <p>Techniques de cuisine, créativité culinaire, hygiène et gestion d'une cuisine professionnelle.</p>
+          <a href="#programme" class="link">Durée & frais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="card reveal">
+        <img src="images/formation-patisserie.jpg" alt="Arts pâtissiers et boulangerie">
+        <div class="card-body">
+          <div class="icon"><i class="fa-solid fa-cake-candles"></i></div>
+          <h3>Pâtisserie & Boulangerie</h3>
+          <p>Pâtisserie fine, viennoiseries, pains spéciaux : maîtrisez les techniques du sucré et du salé.</p>
+          <a href="#programme" class="link">Durée & frais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="card reveal">
+        <img src="images/formation-service.jpg" alt="Service en restauration">
+        <div class="card-body">
+          <div class="icon"><i class="fa-solid fa-bell-concierge"></i></div>
+          <h3>Service en restauration</h3>
+          <p>Art du service, relation client, mise en place et organisation d'un restaurant raffiné.</p>
+          <a href="#programme" class="link">Durée & frais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="card reveal">
+        <img src="images/formation-bar.jpg" alt="Bar-restaurant">
+        <div class="card-body">
+          <div class="icon"><i class="fa-solid fa-martini-glass-citrus"></i></div>
+          <h3>Bar-Restaurant</h3>
+          <p>Cocktails, gestion de bar, cartes des boissons et animation d'un espace bar-restaurant.</p>
+          <a href="#programme" class="link">Durée & frais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Programme & Frais ===== -->
+<section id="programme">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="overline" style="color:var(--gold-2)">Infos pratiques</span>
+      <h2 style="color:#fff">Programme & frais de formation</h2>
+      <p style="color:#b9c4da">Tout ce qu'il faut savoir avant de vous inscrire.</p>
+    </div>
+    <div class="prog-grid">
+      <div class="prog-box reveal">
+        <h3><i class="fa-solid fa-hourglass-half"></i> Durée de formation</h3>
+        <div class="duration-row">
+          <div class="duration-card"><div class="num">02 ans</div><div class="lbl">Formation générale</div></div>
+          <div class="duration-card"><div class="num">01 an</div><div class="lbl">Formation en spécialité</div></div>
+        </div>
+        <h3><i class="fa-solid fa-book-open"></i> Contenu des cours</h3>
+        <ul class="prog-list">
+          <li><i class="fa-solid fa-circle-check"></i> Cours théoriques et pratiques</li>
+          <li><i class="fa-solid fa-circle-check"></i> Immersions académiques</li>
+          <li><i class="fa-solid fa-circle-check"></i> Partage d'expériences avec des professionnels</li>
+          <li><i class="fa-solid fa-circle-check"></i> Sorties pédagogiques</li>
+          <li><i class="fa-solid fa-circle-check"></i> Stage académique (03 et 06 mois)</li>
+          <li><i class="fa-solid fa-circle-check"></i> Examen d'État</li>
+        </ul>
+        <div class="fee-note"><i class="fa-solid fa-graduation-cap"></i> Possibilité de passer les diplômes d'État</div>
+      </div>
+      <div class="prog-box reveal">
+        <h3><i class="fa-solid fa-wallet"></i> Frais de formation</h3>
+        <div class="fee-card">
+          <div class="fee-icon"><i class="fa-solid fa-file-signature"></i></div>
+          <div><h4>Inscription</h4><span class="amount">10 000 FCFA</span><small>Payable une fois, à l'admission</small></div>
+        </div>
+        <div class="fee-card">
+          <div class="fee-icon"><i class="fa-solid fa-shirt"></i></div>
+          <div><h4>Uniforme</h4><span class="amount">25 000 FCFA</span><small>Droit à tous les uniformes de l'école</small></div>
+        </div>
+        <div class="fee-card">
+          <div class="fee-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div><h4>Scolarité</h4><span class="amount">300 000 FCFA</span><small>À payer en 04 tranches</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Galerie ===== -->
+<section id="galerie" style="background:var(--cream)">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="overline">Galerie</span>
+      <h2>La vie à l'EHR</h2>
+      <p>Des formations 100 % pratiques, dans de vraies conditions professionnelles.</p>
+    </div>
+    <div class="gallery">
+      <figure class="reveal"><img src="images/eleve-service.jpg" alt="Élève en service"><figcaption>Service en restauration</figcaption></figure>
+      <figure class="reveal"><img src="images/formation-patisserie.jpg" alt="Atelier pâtisserie"><figcaption>Atelier pâtisserie & boulangerie</figcaption></figure>
+      <figure class="reveal"><img src="images/formation-bar.jpg" alt="Formation bar"><figcaption>Bar & mixologie</figcaption></figure>
+      <figure class="reveal"><img src="images/formation-service.jpg" alt="Art de la table"><figcaption>L'art de la table</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Atouts ===== -->
+<section id="atouts">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="overline" style="color:var(--gold-2)">Pourquoi choisir EHR</span>
+      <h2 style="color:#fff">Votre réussite est notre priorité</h2>
+    </div>
+    <div class="features">
+      <div class="feature reveal"><i class="fa-solid fa-graduation-cap"></i><h3>Formation de qualité</h3>
+        <p>Un cursus exigeant, alliant théorie et pratique dans des ateliers professionnels.</p></div>
+      <div class="feature reveal"><i class="fa-solid fa-user-tie"></i><h3>Encadrement professionnel</h3>
+        <p>Des formateurs expérimentés issus du monde de l'hôtellerie et de la restauration.</p></div>
+      <div class="feature reveal"><i class="fa-solid fa-award"></i><h3>Diplômes d'État</h3>
+        <p>École reconnue par l'État béninois : passez vos diplômes d'État en toute légalité.</p></div>
+      <div class="feature reveal"><i class="fa-solid fa-chart-line"></i><h3>Insertion assurée</h3>
+        <p>Stages en entreprises partenaires et accompagnement vers votre premier emploi.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="overline">Questions fréquentes</span>
+      <h2>FAQ — Vos questions, nos réponses</h2>
+      <p>Tout ce que les futurs élèves et parents demandent le plus souvent.</p>
+    </div>
+    <div class="faq-list">
+
+      <details class="faq-item reveal" open>
+        <summary>Quelles spécialités sont enseignées à l'EHR ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
+        <div class="faq-body">Quatre filières professionnelles : <strong>Cuisine (arts culinaires)</strong>,
+          <strong>Arts pâtissiers & Boulangerie</strong>, <strong>Service en restauration</strong> et
+          <strong>Bar-restaurant</strong>. Vous choisissez votre spécialité après la formation générale.</div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>Quelle est la durée de la formation ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
+        <div class="faq-body">Le cursus dure <strong>2 ans de formation générale</strong>, suivis de
+          <strong>1 an de formation en spécialité</strong>, avec stages et examen d'État inclus.</div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>Combien coûte la formation ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
+        <div class="faq-body">
+          • <strong>Inscription : 10 000 FCFA</strong><br>
+          • <strong>Uniforme : 25 000 FCFA</strong> (droit à tous les uniformes)<br>
+          • <strong>Scolarité : 300 000 FCFA</strong>, à payer en <strong>4 tranches</strong> —
+          un effort pensé pour toutes les familles.</div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>L'EHR est-elle reconnue par l'État ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
+        <div class="faq-body"><strong>Oui.</strong> L'EHR est reconnue par l'État béninois et ses élèves
+          ont la <strong>possibilité de passer les diplômes d'État</strong> (examen d'État inclus dans le cursus).</div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>Y a-t-il des stages en entreprise ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
+        <div class="faq-body">Oui : un <strong>stage académique de 3 et 6 mois</strong> est prévu, en plus des
+          immersions académiques régulières. Nous travaillons avec des hôtels et restaurants de renom
+          (Golden Tulip, Azalaï, Nobila…) qui accueillent nos élèves et recrutent nos diplômés.</div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>Quand commence la prochaine rentrée ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
+        <div class="faq-body">La rentrée est fixée au <strong>17 septembre 2026</strong>. Les inscriptions
+          sont <strong>déjà ouvertes</strong> — les places étant limitées, nous vous conseillons de
+          réserver tôt via le formulaire en bas de page.</div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>Comment s'inscrire ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
+        <div class="faq-body">Trois moyens simples :
+          <strong>1)</strong> remplissez le <a href="#contact">formulaire d'inscription</a>
+          en bas de page et envoyez-le par email ou WhatsApp ;
+          <strong>2)</strong> appelez-nous au <a href="tel:+2290192515959">+229 01 92 51 59 59</a> ;
+          <strong>3)</strong> présentez-vous directement au campus à Abomey-Calavi (Womey).
+          Frais d'inscription : 10 000 FCFA.</div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>Où se trouve l'école et comment vous contacter ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
+        <div class="faq-body">Nous sommes à <strong>Abomey-Calavi, Womey</strong>, rue de la pharmacie
+          Vallée Beraca, non loin du marché. 📞 <a href="tel:+2290192515959">+229 01 92 51 59 59</a>
+          · ✉️ <a href="mailto:ehr.cika@gmail.com">ehr.cika@gmail.com</a>.
+          Suivez-nous aussi sur Facebook, Instagram, TikTok et YouTube (@ehrbenin).</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Partenaires ===== -->
+<section id="partenaires">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="overline">Ils nous font confiance</span>
+      <h2>Nos partenaires</h2>
+      <p>Des hôtels et maisons de renom qui accueillent nos élèves en stage et recrutent nos diplômés.</p>
+    </div>
+    <div class="partners-logos reveal">
+      <div class="partner-card"><img src="images/partenaire-golden-tulip.png" alt="Golden Tulip — Hôtel le Diplomate Cotonou"></div>
+      <div class="partner-card"><img src="images/partenaire-azalai.png" alt="Azalaï Hotel Cotonou"></div>
+      <div class="partner-card"><img src="images/partenaire-nobila.png" alt="Nobila Airport Hotel"></div>
+      <div class="partner-card"><img src="images/partenaire-axwevi.png" alt="Axwevi — Liqueur artisanale"></div>
+    </div>
+    <div class="partners reveal">
+      <span class="partner">ACROPÔLE</span>
+      <span class="partner">LE PHARE</span>
+      <span class="partner">BLEND</span>
+      <span class="partner">… et bien d'autres</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="overline" style="color:var(--gold-2)">Inscriptions 2026</span>
+      <h2 style="color:#fff">Réservez votre place dès aujourd'hui</h2>
+      <p style="color:#b9c4da">Rentrée le 17 septembre 2026 — les inscriptions sont ouvertes.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="info-card"><i class="fa-solid fa-location-dot"></i>
+          <div><h3>Adresse</h3>Abomey-Calavi, Womey — rue de la pharmacie Vallée Beraca, non loin du marché</div></div>
+        <div class="info-card"><i class="fa-solid fa-phone"></i>
+          <div><h3>Téléphone</h3><a href="tel:+2290192515959">+229 01 92 51 59 59</a><br>
+            <a href="tel:+2290167995756">+229 01 67 99 57 56</a></div></div>
+        <div class="info-card"><i class="fa-solid fa-envelope"></i>
+          <div><h3>Email</h3><a href="mailto:ehr.cika@gmail.com">ehr.cika@gmail.com</a></div></div>
+        <div class="info-card"><i class="fa-solid fa-clock"></i>
+          <div><h3>Suivez-nous</h3>
+            <a href="https://www.facebook.com/ehrbenin" target="_blank">Facebook</a> ·
+            <a href="https://www.instagram.com/ehr.benin" target="_blank">Instagram</a> ·
+            <a href="https://tiktok.com/@ehrbenin" target="_blank">TikTok</a> ·
+            <a href="https://YouTube.com/@EHR-Benin" target="_blank">YouTube</a></div></div>
+      </div>
+
+      <!-- ===== FORMULAIRE CONFORME APDP ===== -->
+      <div class="form-box reveal">
+        <h3>Demande d'inscription / d'information</h3>
+        <p>Remplissez le formulaire, puis choisissez comment l'envoyer.</p>
+
+        <div class="privacy-note">
+          <i class="fa-solid fa-lock"></i> Vos données (nom, téléphone, email, filière) sont
+          utilisées <strong>uniquement</strong> pour traiter votre demande. Elles ne sont ni vendues,
+          ni partagées. <a href="#" data-modal="modalPrivacy">En savoir plus</a>
+        </div>
+
+        <form id="formInscription">
+          <div class="form-row">
+            <div><label>Nom complet *</label><input type="text" name="nom" required></div>
+            <div><label>Téléphone *</label><input type="tel" name="telephone" required></div>
+          </div>
+          <div><label>Email</label><input type="email" name="email"></div>
+          <div><label>Filière souhaitée *</label>
+            <select name="filiere" required>
+              <option value="">— Choisir une filière —</option>
+              <option>Cuisine — Arts culinaires</option>
+              <option>Arts pâtissiers & Boulangerie</option>
+              <option>Service en restauration</option>
+              <option>Bar-restaurant</option>
+            </select>
+          </div>
+          <div><label>Message</label><textarea name="message" rows="4" placeholder="Votre message..."></textarea></div>
+
+          <label class="consent">
+            <input type="checkbox" id="consent" required>
+            <span>J'autorise EHR à utiliser mes informations uniquement pour le traitement de ma
+            demande, conformément à sa <a href="#" data-modal="modalPrivacy">politique de confidentialité</a>. *</span>
+          </label>
+
+          <div class="choice-label">Choisissez votre mode d'envoi</div>
+          <div class="btn-row">
+            <button type="submit" class="btn"><i class="fa-solid fa-envelope"></i> Envoyer par Email</button>
+            <button type="button" class="btn btn-wa" id="btnWhatsapp"><i class="fa-brands fa-whatsapp"></i> Envoyer via WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer : LOGO officiel (fondu dans le bleu nuit) ===== -->
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <img src="images/logo.png" alt="Logo EHR" class="footer-logo">
+      <p style="font-size:.9rem">Formez-vous en restauration chez nous et devenez le professionnel
+        que le monde de l'hôtellerie recherche.</p>
+      <p class="footer-slogan">Former aujourd'hui • Exceller demain</p>
+      <div class="socials" style="margin-top:18px">
+        <a href="https://www.facebook.com/ehrbenin" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/ehr.benin" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://tiktok.com/@ehrbenin" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://YouTube.com/@EHR-Benin" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div>
+      <h3>Liens rapides</h3>
+      <ul>
+        <li><a href="#accueil"><i class="fa-solid fa-angle-right"></i>Accueil</a></li>
+        <li><a href="#apropos"><i class="fa-solid fa-angle-right"></i>L'école</a></li>
+        <li><a href="#formations"><i class="fa-solid fa-angle-right"></i>Nos formations</a></li>
+        <li><a href="#programme"><i class="fa-solid fa-angle-right"></i>Frais & programme</a></li>
+        <li><a href="#faq"><i class="fa-solid fa-angle-right"></i>FAQ</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-angle-right"></i>Inscriptions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li><i class="fa-solid fa-location-dot"></i>Abomey-Calavi, Womey — rue de la pharmacie Vallée Beraca</li>
+        <li><i class="fa-solid fa-phone"></i>+229 01 92 51 59 59</li>
+        <li><i class="fa-solid fa-envelope"></i>ehr.cika@gmail.com</li>
+        <li><i class="fa-solid fa-calendar"></i>Rentrée : 17 septembre 2026</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container" style="text-align:center;padding-bottom:22px">
+    <p class="legal-links">
+      <a href="#" data-modal="modalLegal">Mentions légales</a> ·
+      <a href="#" data-modal="modalPrivacy">Politique de confidentialité</a>
+    </p>
+  </div>
+  <div class="copy">© <span id="year"></span> EHR — École de l'Hôtellerie et de la Restauration. Tous droits réservés.</div>
+</footer>
+
+<!-- ===== Bouton WhatsApp flottant ===== -->
+<a class="wa" href="https://wa.me/2290192515959" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<!-- ===== MODALE : MENTIONS LÉGALES ===== -->
+<div class="modal-overlay" id="modalLegal" role="dialog" aria-modal="true">
+  <div class="modal">
+    <button class="close" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+    <h3>Mentions légales</h3>
+    <h4>Éditeur du site</h4>
+    <p><strong>EHR — École de l'Hôtellerie et de la Restauration</strong><br>
+      Abomey-Calavi, Womey — rue de la pharmacie Vallée Beraca, non loin du marché<br>
+      Téléphone : +229 01 92 51 59 59 / +229 01 67 99 57 56<br>
+      Email : ehr.cika@gmail.com</p>
+    <h4>Statut et identification</h4>
+    <p>Établissement privé d'enseignement reconnu par l'État béninois.<br>
+      IFU : <em>[à compléter]</em> — RCCM : <em>[à compléter]</em></p>
+    <h4>Directeur de la publication</h4>
+    <p><em>[À compléter : nom et fonction du dirigeant responsable]</em></p>
+    <h4>Hébergement</h4>
+    <p><em>[À compléter lors de la mise en ligne : nom, adresse et contact de l'hébergeur]</em></p>
+    <h4>Propriété intellectuelle</h4>
+    <p>L'ensemble des contenus de ce site (textes, photographies, logos, éléments graphiques) est
+      protégé par le droit d'auteur. Toute reproduction ou utilisation sans autorisation écrite
+      préalable de l'EHR est interdite.</p>
+    <h4>Signalement</h4>
+    <p>Tout contenu illicite ou inexact peut être signalé à ehr.cika@gmail.com.</p>
+  </div>
+</div>
+
+<!-- ===== MODALE : POLITIQUE DE CONFIDENTIALITÉ ===== -->
+<div class="modal-overlay" id="modalPrivacy" role="dialog" aria-modal="true">
+  <div class="modal">
+    <button class="close" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+    <h3>Politique de confidentialité</h3>
+    <p style="font-size:.85rem;color:var(--muted)">Conformément à la loi n° 2017-20 du 20 avril 2018
+      portant Code du numérique en République du Bénin, l'EHR s'engage à protéger vos données
+      personnelles.</p>
+
+    <h4>1. Responsable du traitement</h4>
+    <p>EHR — École de l'Hôtellerie et de la Restauration, Abomey-Calavi, Womey, rue de la
+      pharmacie Vallée Beraca. Contact : ehr.cika@gmail.com — +229 01 92 51 59 59.</p>
+
+    <h4>2. Données collectées</h4>
+    <ul>
+      <li>Via le formulaire : nom, téléphone, email (facultatif), filière souhaitée, message.</li>
+      <li>Aucune donnée sensible n'est collectée.</li>
+      <li>Le site n'utilise <strong>aucun cookie de pistage</strong> ni outil de mesure d'audience.</li>
+    </ul>
+
+    <h4>3. Finalités</h4>
+    <p>Vos données servent exclusivement à : traiter votre demande d'inscription ou
+      d'information, vous recontacter et gérer votre candidature. Le message est transmis
+      selon votre choix, par email (via votre application de messagerie) ou via WhatsApp.</p>
+
+    <h4>4. Base légale</h4>
+    <p>Votre <strong>consentement exprès</strong>, donné par la case à cocher obligatoire du formulaire.</p>
+
+    <h4>5. Destinataires</h4>
+    <p>Uniquement le service des inscriptions de l'EHR. Vos données ne sont ni vendues,
+      ni cédées, ni partagées avec des tiers.</p>
+
+    <h4>6. Durée de conservation</h4>
+    <p>Le temps nécessaire au traitement de votre demande, puis archivage limité à
+      <strong>1 an</strong> maximum (sauf relation contractuelle en cours).</p>
+
+    <h4>7. Vos droits</h4>
+    <p>Vous disposez d'un droit d'<strong>accès</strong>, de <strong>rectification</strong>,
+      d'<strong>opposition</strong> et d'<strong>effacement</strong> de vos données.
+      Exercez-les par email à ehr.cika@gmail.com ou par courrier à l'adresse de l'école.
+      Une réponse vous sera apportée dans un délai de 30 jours maximum.</p>
+
+    <div class="apdp">
+      <strong>Réclamation</strong> — Si vous estimez que vos droits ne sont pas respectés,
+      vous pouvez saisir l'<strong>Autorité de Protection des Données Personnelles (APDP)</strong> :
+      <a href="https://www.apdp.bj" target="_blank" style="color:var(--gold)">www.apdp.bj</a>.
+    </div>
+
+    <h4>8. Sécurité</h4>
+    <p>Le site ne stocke vos données sur aucun serveur : l'envoi s'effectue directement depuis
+      votre appareil vers nos canaux officiels (email / WhatsApp). Le personnel de l'EHR est
+      tenu à la confidentialité des informations reçues.</p>
+
+    <p style="margin-top:18px;font-size:.82rem;color:var(--muted)">Dernière mise à jour :
+      <em>[à dater à la publication]</em></p>
+  </div>
+</div>
+
+<script>
+// ===== Splash =====
+let splashHidden=false;
+function hideSplash(){
+  if(splashHidden)return; splashHidden=true;
+  const s=document.getElementById('splash');
+  if(s){s.classList.add('hide');setTimeout(()=>s.remove(),700);}
+}
+window.addEventListener('load',hideSplash);
+setTimeout(hideSplash,2500);
+
+// Menu mobile
+const toggle=document.getElementById('menuToggle'),links=document.getElementById('navLinks');
+toggle.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+
+// Animations au défilement
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Année automatique
+document.getElementById('year').textContent=new Date().getFullYear();
+
+// ===== Modales légales =====
+document.querySelectorAll('[data-modal]').forEach(l=>l.addEventListener('click',e=>{
+  e.preventDefault();
+  document.getElementById(l.dataset.modal).classList.add('open');
+}));
+document.querySelectorAll('.modal-overlay').forEach(m=>{
+  m.addEventListener('click',e=>{ if(e.target===m) m.classList.remove('open'); });
+  m.querySelector('.close').addEventListener('click',()=>m.classList.remove('open'));
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape') document.querySelectorAll('.modal-overlay.open').forEach(m=>m.classList.remove('open'));
+});
+
+// ===== Construction automatique du message =====
+function construireMessage(f){
+  return `Bonjour EHR 👋
+Je souhaite m'inscrire / avoir des informations.
+
+👤 Nom : ${f.nom.value.trim()}
+📞 Téléphone : ${f.telephone.value.trim()}${f.email.value.trim()?`
+📧 Email : ${f.email.value.trim()}`:''}
+🎓 Filière : ${f.filiere.value}${f.message.value.trim()?`
+💬 Message : ${f.message.value.trim()}`:''}`;
+}
+
+// ===== ENVOI PAR EMAIL =====
+document.getElementById('formInscription').addEventListener('submit',function(e){
+  e.preventDefault();
+  const f=this;
+  if(!f.checkValidity()){f.reportValidity();return;}
+  const sujet='Demande d\'inscription — '+f.filiere.value;
+  window.location.href='mailto:ehr.cika@gmail.com'
+    +'?subject='+encodeURIComponent(sujet)
+    +'&body='+encodeURIComponent(construireMessage(f));
+});
+
+// ===== ENVOI VIA WHATSAPP =====
+document.getElementById('btnWhatsapp').addEventListener('click',function(){
+  const f=document.getElementById('formInscription');
+  if(!f.checkValidity()){f.reportValidity();return;}
+  window.open('https://wa.me/2290192515959?text='+encodeURIComponent(construireMessage(f)),'_blank');
+});
+</script>
+</body>
+</html>ank');
+});
+</script>
+</body>
+</html>
+</html>
