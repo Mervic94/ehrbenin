@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EHR — École de l'Hôtellerie et de la Restauration | Bénin</title>
-<meta name="description" content="EHR Abomey-Calavi : école reconnue par l'État béninois. Cuisine, pâtisserie, service, bar-restaurant. 2 ans de formation, stage garanti, diplômes d'État. Rentrée le 17 septembre 2026.">
+<meta name="description" content="EHR Abomey-Calavi & Cotonou : école reconnue par l'État béninois. Cuisine, pâtisserie, service, bar-restaurant et DÉCORATION ÉVÈNEMENTIELLE. Rentrée : 17 sept. & 22 oct. 2026.">
 <meta name="theme-color" content="#0e2249">
 
 <!-- ===== Partage WhatsApp / Facebook ===== -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="EHR — École de l'Hôtellerie et de la Restauration">
-<meta property="og:description" content="Reconnu par l'État béninois. Cuisine, pâtisserie, service, bar-restaurant. Scolarité 300 000 F en 4 tranches. Rentrée le 17 septembre 2026 !">
+<meta property="og:description" content="Reconnu par l'État béninois. NOUVEAU : Décoration évènementielle (1 an). Cuisine, pâtisserie, service, bar. Rentrée : 17 sept. & 22 oct. 2026 — 100 % pratique !">
 <meta property="og:image" content="images/logo.png">
 <meta property="og:locale" content="fr_FR">
 
@@ -24,9 +24,9 @@
   "@type": "FAQPage",
   "mainEntity": [
     {"@type":"Question","name":"Quelles spécialités sont enseignées à l'EHR ?",
-     "acceptedAnswer":{"@type":"Answer","text":"Quatre filières : Cuisine (arts culinaires), Arts pâtissiers & Boulangerie, Service en restauration et Bar-restaurant."}},
+     "acceptedAnswer":{"@type":"Answer","text":"Cinq filières : Cuisine (arts culinaires), Arts pâtissiers & Boulangerie, Service en restauration, Bar-restaurant et Décoration évènementielle."}},
     {"@type":"Question","name":"Quelle est la durée de la formation ?",
-     "acceptedAnswer":{"@type":"Answer","text":"2 ans de formation générale, puis 1 an de formation en spécialité."}},
+     "acceptedAnswer":{"@type":"Answer","text":"2 ans de formation générale, puis 1 an de formation en spécialité. La Décoration évènementielle dure 1 an."}},
     {"@type":"Question","name":"Combien coûte la formation à l'EHR ?",
      "acceptedAnswer":{"@type":"Answer","text":"Inscription : 10 000 FCFA. Uniforme : 25 000 FCFA (droit à tous les uniformes). Scolarité : 300 000 FCFA, payable en 4 tranches."}},
     {"@type":"Question","name":"L'EHR est-elle reconnue par l'État béninois ?",
@@ -34,11 +34,13 @@
     {"@type":"Question","name":"Y a-t-il des stages en entreprise ?",
      "acceptedAnswer":{"@type":"Answer","text":"Oui, un stage académique de 3 et 6 mois est prévu, avec des immersions dans nos hôtels et restaurants partenaires."}},
     {"@type":"Question","name":"Quand commence la prochaine rentrée ?",
-     "acceptedAnswer":{"@type":"Answer","text":"La rentrée est fixée au 17 septembre 2026. Les inscriptions sont déjà ouvertes."}},
+     "acceptedAnswer":{"@type":"Answer","text":"Deux rentrées : le 17 septembre 2026 pour les formations hôtellerie-restauration, et le 22 octobre 2026 pour la Décoration évènementielle. Les inscriptions sont déjà ouvertes."}},
+    {"@type":"Question","name":"La formation en Décoration évènementielle, c'est quoi ?",
+     "acceptedAnswer":{"@type":"Answer","text":"Une formation d'1 an, 100 % pratique : décoration de mariages, anniversaires, cérémonies, scénographie florale, drapage et mise en place d'espaces évènementiels."}},
     {"@type":"Question","name":"Comment s'inscrire à l'EHR ?",
-     "acceptedAnswer":{"@type":"Answer","text":"Via le formulaire du site (envoi par email ou WhatsApp), par téléphone au +229 01 92 51 59 59, ou directement au campus à Abomey-Calavi, Womey."}},
-    {"@type":"Question","name":"Où se trouve l'école et comment la contacter ?",
-     "acceptedAnswer":{"@type":"Answer","text":"Abomey-Calavi, Womey, rue de la pharmacie Vallée Beraca, non loin du marché. Tél : +229 01 92 51 59 59. Email : ehr.cika@gmail.com."}}
+     "acceptedAnswer":{"@type":"Answer","text":"Via le formulaire du site (envoi par email ou WhatsApp), par téléphone au +229 01 92 51 59 59, ou directement sur nos campus d'Abomey-Calavi (Womey) ou de Cotonou (Guinkomey)."}},
+    {"@type":"Question","name":"Où se trouvent les sites de l'EHR ?",
+     "acceptedAnswer":{"@type":"Answer","text":"Site de Calavi : Womey, rue de la pharmacie Vallée Beraca, non loin du marché. Site de Cotonou : Guinkomey, rue pavé, en face de l'ex Ciné Vogue. Tél : +229 01 92 51 59 59. Email : ehr.cika@gmail.com."}}
   ]
 }
 </script>
@@ -65,23 +67,13 @@ section{padding:80px 0}
 /* ============================================================
    LOGO OFFICIEL (images/logo.png — fond noir assumé ou fondu)
 ============================================================ */
-/* Navbar : badge noir arrondi (élégant sur fond blanc).
-   ➜ SI un jour vous détourez le logo (remove.bg) en logo-transparent.png,
-      remplacez src et appliquez plutôt :
-      .logo-img{height:56px;border-radius:0;mix-blend-mode:multiply;box-shadow:none} */
 .logo-img{height:56px;width:56px;border-radius:12px;object-fit:cover;display:block;
   box-shadow:0 3px 12px rgba(14,34,73,.28);border:1px solid rgba(212,160,23,.35)}
-
-/* Splash : le fond noir du logo disparaît sur le bleu nuit */
 .splash-logo{width:min(300px,70vw);aspect-ratio:1;object-fit:cover;border-radius:20px;
   mix-blend-mode:screen;animation:pulse 1.6s ease-in-out infinite}
 @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.05);opacity:.85}}
-
-/* Filigrane hero : fondu dans le bleu nuit */
 .hero-mark{width:min(400px,52vw);aspect-ratio:1;object-fit:cover;
   mix-blend-mode:screen;opacity:.12;border-radius:20px}
-
-/* Footer : fondu dans le bleu nuit */
 .footer-logo{width:150px;height:150px;object-fit:cover;border-radius:18px;
   mix-blend-mode:screen;margin-bottom:14px}
 
@@ -122,8 +114,9 @@ section{padding:80px 0}
 .hero::before{content:"";position:absolute;width:640px;height:640px;border-radius:50%;
   background:radial-gradient(circle,var(--gold) 0%,transparent 70%);opacity:.16;top:-160px;right:-140px}
 .hero .container{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;position:relative;z-index:1}
+.hero-badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
 .badge{display:inline-block;background:rgba(212,160,23,.18);border:1px solid var(--gold);
-  color:var(--gold-2);padding:7px 18px;border-radius:50px;font-size:.85rem;margin-bottom:20px}
+  color:var(--gold-2);padding:7px 18px;border-radius:50px;font-size:.85rem}
 .hero h1{color:#fff;font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.25;margin-bottom:8px}
 .hero h1 span{color:var(--gold-2)}
 .hero .script{font-family:'Dancing Script',cursive;font-size:1.9rem;color:var(--gold-2);margin-bottom:22px}
@@ -132,11 +125,13 @@ section{padding:80px 0}
 .hero-img{border-radius:20px;overflow:hidden;border:4px solid var(--gold);box-shadow:0 25px 60px rgba(0,0,0,.4)}
 .hero-img img{width:100%;height:100%;object-fit:cover;max-height:560px}
 
-/* ===== Bandeau annonce ===== */
+/* ===== Bandeaux annonce ===== */
 .ribbon{background:linear-gradient(90deg,var(--gold),var(--gold-2),var(--gold));color:var(--navy-3);
   text-align:center;padding:16px 10px;font-weight:600}
 .ribbon i{margin-right:10px}
 .ribbon a{background:var(--navy);color:#fff;padding:6px 18px;border-radius:50px;margin-left:14px;font-size:.9rem}
+.ribbon-new{background:linear-gradient(90deg,#8f1622,#c8202e,#8f1622);color:#fff}
+.ribbon-new a{background:var(--gold-2);color:var(--navy-3);font-weight:700}
 
 /* ===== Titres de section ===== */
 .sec-head{text-align:center;max-width:640px;margin:0 auto 50px}
@@ -162,7 +157,7 @@ section{padding:80px 0}
 /* ===== Formations ===== */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px}
 .card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
-  transition:.35s;border:1px solid #eee}
+  transition:.35s;border:1px solid #eee;position:relative}
 .card:hover{transform:translateY(-8px)}
 .card img{height:200px;width:100%;object-fit:cover}
 .card-body{padding:24px}
@@ -172,6 +167,10 @@ section{padding:80px 0}
 .card h3{font-size:1.25rem;margin-bottom:10px}
 .card p{color:var(--muted);font-size:.92rem}
 .card .link{display:inline-block;margin-top:14px;color:var(--gold);font-weight:600;font-size:.9rem}
+.card-flag{position:absolute;top:14px;left:14px;z-index:2;background:linear-gradient(90deg,#8f1622,#c8202e);
+  color:#fff;font-size:.75rem;font-weight:700;padding:6px 14px;border-radius:50px;
+  letter-spacing:1px;box-shadow:0 4px 12px rgba(0,0,0,.3);text-transform:uppercase}
+.card-flag small{display:block;font-size:.62rem;font-weight:500;letter-spacing:.3px;opacity:.9}
 
 /* ===== Programme & Frais ===== */
 #programme{background:linear-gradient(120deg,var(--navy-3),var(--navy))}
@@ -180,10 +179,14 @@ section{padding:80px 0}
   border-radius:var(--radius);padding:30px;color:#dfe6f3}
 .prog-box h3{color:var(--gold-2);font-size:1.15rem;margin-bottom:16px;display:flex;align-items:center;gap:10px}
 .duration-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
-.duration-card{flex:1;min-width:180px;background:rgba(14,34,73,.5);border:1px solid rgba(212,160,23,.3);
-  border-radius:12px;padding:18px;text-align:center}
+.duration-card{flex:1;min-width:150px;background:rgba(14,34,73,.5);border:1px solid rgba(212,160,23,.3);
+  border-radius:12px;padding:18px;text-align:center;position:relative}
 .duration-card .num{font-family:'Playfair Display',serif;font-size:2rem;color:var(--gold-2);font-weight:800}
 .duration-card .lbl{font-size:.85rem;color:#b9c4da}
+.duration-card.is-new{border-color:#c8202e;background:rgba(143,22,34,.35)}
+.duration-card .new-tag{position:absolute;top:-10px;left:50%;transform:translateX(-50%);
+  background:#c8202e;color:#fff;font-size:.62rem;font-weight:700;padding:2px 10px;
+  border-radius:50px;letter-spacing:1px;white-space:nowrap}
 .prog-list{list-style:none}
 .prog-list li{padding:8px 0 8px 34px;position:relative;border-bottom:1px dashed rgba(255,255,255,.12);font-size:.92rem}
 .prog-list li:last-child{border-bottom:none}
@@ -198,6 +201,8 @@ section{padding:80px 0}
 .fee-card small{color:var(--muted);font-size:.8rem;display:block;line-height:1.4}
 .fee-note{margin-top:16px;text-align:center;background:rgba(212,160,23,.12);border:1px dashed var(--gold);
   border-radius:10px;padding:12px;color:var(--gold-2);font-size:.88rem}
+.pct-note{margin-top:14px;text-align:center;background:rgba(200,32,46,.18);border:1px dashed #e05565;
+  border-radius:10px;padding:12px;color:#ffb3bd;font-size:.9rem;font-weight:600}
 
 /* ===== Galerie ===== */
 #galerie{background:var(--cream)}
@@ -258,6 +263,8 @@ section{padding:80px 0}
 .info-card i{font-size:1.3rem;color:var(--gold-2);margin-top:4px}
 .info-card h3{color:#fff;font-size:1rem;margin-bottom:4px}
 .info-card a:hover{color:var(--gold-2)}
+.info-card .site-tag{display:inline-block;background:var(--gold);color:var(--navy-3);font-size:.7rem;
+  font-weight:700;padding:2px 10px;border-radius:50px;margin-bottom:6px;letter-spacing:.5px}
 .form-box{background:#fff;border-radius:var(--radius);padding:36px;box-shadow:0 25px 60px rgba(0,0,0,.3)}
 .form-box h3{font-size:1.5rem;margin-bottom:6px}
 .form-box>p{color:var(--muted);font-size:.9rem;margin-bottom:22px}
@@ -293,6 +300,10 @@ section{padding:80px 0}
   font-size:1.4rem;cursor:pointer;color:var(--muted)}
 .modal .close:hover{color:var(--gold)}
 .modal .apdp{background:var(--cream);border-left:3px solid var(--gold);padding:12px 14px;border-radius:8px;margin-top:14px}
+.privacy-meta{background:var(--cream);border:1px dashed var(--gold);border-radius:10px;
+  padding:12px 14px;margin:10px 0 6px;font-size:.85rem;color:var(--text)}
+.privacy-meta strong{color:var(--navy)}
+.changelog li{margin-bottom:8px}
 
 /* ===== Footer ===== */
 footer{background:var(--navy-3);color:#9aa7c2;padding:60px 0 0}
@@ -361,7 +372,7 @@ footer i{color:var(--gold);margin-right:8px}
   </div>
 </div>
 
-<!-- ===== Navigation : LOGO officiel en badge ===== -->
+<!-- ===== Navigation ===== -->
 <nav class="navbar">
   <div class="container">
     <a href="#accueil" class="logo" aria-label="EHR — Accueil">
@@ -380,35 +391,43 @@ footer i{color:var(--gold);margin-right:8px}
   </div>
 </nav>
 
-<!-- ===== Hero : LOGO officiel en filigrane ===== -->
+<!-- ===== Hero ===== -->
 <header class="hero" id="accueil">
   <img src="images/logo.png" alt="" class="hero-mark" aria-hidden="true"
        style="position:absolute;right:-20px;bottom:-10px;z-index:0">
   <div class="container">
     <div>
-      <span class="badge"><i class="fa-solid fa-award"></i> Reconnu par l'État béninois — Diplômes d'État</span>
+      <div class="hero-badges">
+        <span class="badge"><i class="fa-solid fa-award"></i> Reconnu par l'État béninois — Diplômes d'État</span>
+        <span class="badge"><i class="fa-solid fa-hand-sparkles"></i> 100 % pratique</span>
+      </div>
       <h1>VOTRE CARRIÈRE <span>COMMENCE MAINTENANT</span> !</h1>
       <div class="script">Les inscriptions ont démarré !</div>
-      <p>Cuisine, pâtisserie & boulangerie, service en restauration, bar-restaurant :
-        rejoignez une école d'excellence — formation de qualité, encadrement professionnel
-        et insertion assurée.</p>
+      <p>Cuisine, pâtisserie & boulangerie, service en restauration, bar-restaurant et
+        <strong>décoration évènementielle</strong> : rejoignez une école d'excellence —
+        formation de qualité, encadrement professionnel et insertion assurée.</p>
       <div class="hero-ctas">
         <a href="#formations" class="btn">Découvrir nos formations</a>
         <a href="#contact" class="btn btn-outline">Je m'inscris</a>
       </div>
     </div>
     <div class="hero-img">
-      <!-- REMPLACER plus tard par : images/hero2.png (photo de groupe en uniformes bleus) -->
-      <img src="images/hero2.png" alt="Élève EHR en formation de service">
+      <!-- Photo : hero-decor.jpg — remplaçable plus tard par images/hero.jpg (photo de groupe) -->
+      <img src="images/hero-decor.jpg" alt="Organisatrice d'évènements en formation à l'EHR">
     </div>
   </div>
 </header>
 
-<!-- ===== Bandeau rentrée ===== -->
+<!-- ===== Bandeaux annonce ===== -->
 <div class="ribbon">
   <i class="fa-solid fa-calendar-days"></i>
-  RENTRÉE LE 17 SEPTEMBRE 2026 — Scolarité 300 000 F payable en 4 tranches !
+  RENTRÉES 2026 : 17 SEPTEMBRE (restauration) & 22 OCTOBRE (décoration) — Scolarité 300 000 F en 4 tranches !
   <a href="#contact">Réserver ma place</a>
+</div>
+<div class="ribbon ribbon-new">
+  <i class="fa-solid fa-star"></i>
+  NOUVEAU : FORMATION EN DÉCORATION ÉVÈNEMENTIELLE — 1 AN, 100 % PRATIQUE. RENTRÉE LE 22 OCTOBRE 2026 !
+  <a href="#contact">Je m'inscris</a>
 </div>
 
 <!-- ===== À propos ===== -->
@@ -417,12 +436,14 @@ footer i{color:var(--gold);margin-right:8px}
     <div class="reveal">
       <span class="overline">Qui sommes-nous</span>
       <h2>Former aujourd'hui, exceller demain</h2>
-      <p>L'<strong>École de l'Hôtellerie et de la Restauration (EHR)</strong>, située à
-        Abomey-Calavi (Womey), forme la nouvelle génération des professionnels de la
-        restauration au Bénin. Nos apprenants bénéficient d'un encadrement pratique dans
-        des ateliers modernes et d'une immersion réelle auprès de nos partenaires hôteliers.</p>
+      <p>L'<strong>École de l'Hôtellerie et de la Restauration (EHR)</strong>, présente à
+        <strong>Abomey-Calavi (Womey)</strong> et à <strong>Cotonou (Guinkomey)</strong>, forme la
+        nouvelle génération des professionnels de la restauration et de la décoration
+        évènementielle au Bénin. Nos apprenants bénéficient d'un encadrement pratique dans
+        des ateliers modernes et d'une immersion réelle auprès de nos partenaires.</p>
       <ul class="checks">
         <li><i class="fa-solid fa-circle-check"></i> Établissement reconnu par l'État béninois</li>
+        <li><i class="fa-solid fa-circle-check"></i> Formation <strong>100 % pratique</strong></li>
         <li><i class="fa-solid fa-circle-check"></i> Possibilité de passer les diplômes d'État</li>
         <li><i class="fa-solid fa-circle-check"></i> Stage académique de 3 et 6 mois en entreprise</li>
         <li><i class="fa-solid fa-circle-check"></i> Insertion professionnelle assurée</li>
@@ -437,9 +458,9 @@ footer i{color:var(--gold);margin-right:8px}
 <div class="stats">
   <div class="container">
     <div class="stat reveal"><h3>2 ans</h3><p>Formation générale</p></div>
-    <div class="stat reveal"><h3>1 an</h3><p>Formation en spécialité</p></div>
-    <div class="stat reveal"><h3>4</h3><p>Filières professionnelles</p></div>
-    <div class="stat reveal"><h3>3-6 mois</h3><p>Stage académique</p></div>
+    <div class="stat reveal"><h3>1 an</h3><p>Spécialité & Décoration</p></div>
+    <div class="stat reveal"><h3>5</h3><p>Filières professionnelles</p></div>
+    <div class="stat reveal"><h3>2</h3><p>Campus : Calavi & Cotonou</p></div>
   </div>
 </div>
 
@@ -448,12 +469,12 @@ footer i{color:var(--gold);margin-right:8px}
   <div class="container">
     <div class="sec-head reveal">
       <span class="overline">Nos spécialités</span>
-      <h2>Quatre filières vers l'emploi</h2>
+      <h2>Cinq filières vers l'emploi</h2>
       <p>Des programmes pratiques conçus pour rendre nos diplômés immédiatement opérationnels.</p>
     </div>
     <div class="cards">
       <div class="card reveal">
-        <img src="images/formation-art-culinaire.png" alt="Arts culinaires">
+        <img src="https://placehold.co/400x240/0e2249/f0c75e?text=Photo+Cuisine+a+fournir" alt="Arts culinaires">
         <div class="card-body">
           <div class="icon"><i class="fa-solid fa-utensils"></i></div>
           <h3>Cuisine — Arts culinaires</h3>
@@ -488,6 +509,17 @@ footer i{color:var(--gold);margin-right:8px}
           <a href="#programme" class="link">Durée & frais <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
+      <div class="card reveal">
+        <div class="card-flag">Nouveau !<small>Rentrée : 22 octobre 2026</small></div>
+        <img src="images/formation-decor.jpeg" alt="Décoration de table d'honneur — formation décoration évènementielle EHR">
+        <div class="card-body">
+          <div class="icon" style="background:linear-gradient(135deg,#8f1622,#c8202e)"><i class="fa-solid fa-archway"></i></div>
+          <h3>Décoration évènementielle</h3>
+          <p>Mariages, anniversaires, cérémonies : scénographie florale, drapage, arches et mise en
+            place d'espaces. <strong>1 an, 100 % pratique.</strong></p>
+          <a href="#contact" class="link">Je m'inscris <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -506,6 +538,8 @@ footer i{color:var(--gold);margin-right:8px}
         <div class="duration-row">
           <div class="duration-card"><div class="num">02 ans</div><div class="lbl">Formation générale</div></div>
           <div class="duration-card"><div class="num">01 an</div><div class="lbl">Formation en spécialité</div></div>
+          <div class="duration-card is-new"><span class="new-tag">NOUVEAU</span>
+            <div class="num">01 an</div><div class="lbl">Décoration évènementielle</div></div>
         </div>
         <h3><i class="fa-solid fa-book-open"></i> Contenu des cours</h3>
         <ul class="prog-list">
@@ -517,6 +551,7 @@ footer i{color:var(--gold);margin-right:8px}
           <li><i class="fa-solid fa-circle-check"></i> Examen d'État</li>
         </ul>
         <div class="fee-note"><i class="fa-solid fa-graduation-cap"></i> Possibilité de passer les diplômes d'État</div>
+        <div class="pct-note"><i class="fa-solid fa-hand-sparkles"></i> 100 % pratique — apprenez en faisant !</div>
       </div>
       <div class="prog-box reveal">
         <h3><i class="fa-solid fa-wallet"></i> Frais de formation</h3>
@@ -546,7 +581,7 @@ footer i{color:var(--gold);margin-right:8px}
       <p>Des formations 100 % pratiques, dans de vraies conditions professionnelles.</p>
     </div>
     <div class="gallery">
-      <figure class="reveal"><img src="images/eleve-service.jpg" alt="Élève en service"><figcaption>Service en restauration</figcaption></figure>
+      <figure class="reveal"><img src="images/hero-decor.jpg" alt="Organisatrice d'évènements EHR"><figcaption>Décoration & organisation d'évènements</figcaption></figure>
       <figure class="reveal"><img src="images/formation-patisserie.jpg" alt="Atelier pâtisserie"><figcaption>Atelier pâtisserie & boulangerie</figcaption></figure>
       <figure class="reveal"><img src="images/formation-bar.jpg" alt="Formation bar"><figcaption>Bar & mixologie</figcaption></figure>
       <figure class="reveal"><img src="images/formation-service.jpg" alt="Art de la table"><figcaption>L'art de la table</figcaption></figure>
@@ -586,15 +621,16 @@ footer i{color:var(--gold);margin-right:8px}
 
       <details class="faq-item reveal" open>
         <summary>Quelles spécialités sont enseignées à l'EHR ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
-        <div class="faq-body">Quatre filières professionnelles : <strong>Cuisine (arts culinaires)</strong>,
-          <strong>Arts pâtissiers & Boulangerie</strong>, <strong>Service en restauration</strong> et
-          <strong>Bar-restaurant</strong>. Vous choisissez votre spécialité après la formation générale.</div>
+        <div class="faq-body">Cinq filières professionnelles : <strong>Cuisine (arts culinaires)</strong>,
+          <strong>Arts pâtissiers & Boulangerie</strong>, <strong>Service en restauration</strong>,
+          <strong>Bar-restaurant</strong> et la nouvelle filière <strong>Décoration évènementielle</strong>.</div>
       </details>
 
       <details class="faq-item reveal">
         <summary>Quelle est la durée de la formation ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
-        <div class="faq-body">Le cursus dure <strong>2 ans de formation générale</strong>, suivis de
-          <strong>1 an de formation en spécialité</strong>, avec stages et examen d'État inclus.</div>
+        <div class="faq-body">Le cursus restauration dure <strong>2 ans de formation générale</strong>, suivis de
+          <strong>1 an de formation en spécialité</strong>, avec stages et examen d'État inclus.
+          La <strong>Décoration évènementielle</strong> dure <strong>1 an</strong>.</div>
       </details>
 
       <details class="faq-item reveal">
@@ -613,17 +649,25 @@ footer i{color:var(--gold);margin-right:8px}
       </details>
 
       <details class="faq-item reveal">
+        <summary>La formation en Décoration évènementielle, c'est quoi ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
+        <div class="faq-body">Une nouvelle filière d'<strong>1 an, 100 % pratique</strong> : décoration de
+          mariages, anniversaires et cérémonies, scénographie florale, drapage, arches et mise en
+          place d'espaces évènementiels. <strong>Rentrée le 22 octobre 2026</strong>.</div>
+      </details>
+
+      <details class="faq-item reveal">
         <summary>Y a-t-il des stages en entreprise ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
         <div class="faq-body">Oui : un <strong>stage académique de 3 et 6 mois</strong> est prévu, en plus des
-          immersions académiques régulières. Nous travaillons avec des hôtels et restaurants de renom
+          immersions académiques régulières. Nous travaillons avec des hôtels et maisons de renom
           (Golden Tulip, Azalaï, Nobila…) qui accueillent nos élèves et recrutent nos diplômés.</div>
       </details>
 
       <details class="faq-item reveal">
-        <summary>Quand commence la prochaine rentrée ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
-        <div class="faq-body">La rentrée est fixée au <strong>17 septembre 2026</strong>. Les inscriptions
-          sont <strong>déjà ouvertes</strong> — les places étant limitées, nous vous conseillons de
-          réserver tôt via le formulaire en bas de page.</div>
+        <summary>Quand commencent les prochaines rentrées ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
+        <div class="faq-body">Deux rentrées en 2026 : le <strong>17 septembre</strong> pour les formations
+          hôtellerie-restauration et le <strong>22 octobre</strong> pour la Décoration évènementielle.
+          Les inscriptions sont <strong>déjà ouvertes</strong> — les places étant limitées, réservez tôt
+          via le formulaire en bas de page.</div>
       </details>
 
       <details class="faq-item reveal">
@@ -632,16 +676,18 @@ footer i{color:var(--gold);margin-right:8px}
           <strong>1)</strong> remplissez le <a href="#contact">formulaire d'inscription</a>
           en bas de page et envoyez-le par email ou WhatsApp ;
           <strong>2)</strong> appelez-nous au <a href="tel:+2290192515959">+229 01 92 51 59 59</a> ;
-          <strong>3)</strong> présentez-vous directement au campus à Abomey-Calavi (Womey).
+          <strong>3)</strong> présentez-vous directement sur l'un de nos campus.
           Frais d'inscription : 10 000 FCFA.</div>
       </details>
 
       <details class="faq-item reveal">
-        <summary>Où se trouve l'école et comment vous contacter ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
-        <div class="faq-body">Nous sommes à <strong>Abomey-Calavi, Womey</strong>, rue de la pharmacie
-          Vallée Beraca, non loin du marché. 📞 <a href="tel:+2290192515959">+229 01 92 51 59 59</a>
+        <summary>Où se trouvent les sites de l'EHR ? <span class="chev"><i class="fa-solid fa-chevron-down"></i></span></summary>
+        <div class="faq-body">
+          <strong>📍 Site de Calavi :</strong> Womey, rue de la pharmacie Vallée Beraca, non loin du marché.<br>
+          <strong>📍 Site de Cotonou :</strong> Guinkomey, rue pavé, en face de l'ex Ciné Vogue.<br>
+          📞 <a href="tel:+2290192515959">+229 01 92 51 59 59</a> / <a href="tel:+2290167995756">01 67 99 57 56</a>
           · ✉️ <a href="mailto:ehr.cika@gmail.com">ehr.cika@gmail.com</a>.
-          Suivez-nous aussi sur Facebook, Instagram, TikTok et YouTube (@ehrbenin).</div>
+          Suivez-nous sur Facebook, Instagram, TikTok et YouTube (@ehrbenin).</div>
       </details>
 
     </div>
@@ -677,12 +723,16 @@ footer i{color:var(--gold);margin-right:8px}
     <div class="sec-head reveal">
       <span class="overline" style="color:var(--gold-2)">Inscriptions 2026</span>
       <h2 style="color:#fff">Réservez votre place dès aujourd'hui</h2>
-      <p style="color:#b9c4da">Rentrée le 17 septembre 2026 — les inscriptions sont ouvertes.</p>
+      <p style="color:#b9c4da">Rentrées : 17 septembre & 22 octobre 2026 — les inscriptions sont ouvertes.</p>
     </div>
     <div class="contact-grid">
       <div class="reveal">
         <div class="info-card"><i class="fa-solid fa-location-dot"></i>
-          <div><h3>Adresse</h3>Abomey-Calavi, Womey — rue de la pharmacie Vallée Beraca, non loin du marché</div></div>
+          <div><h3>Nos sites</h3>
+            <span class="site-tag">Site de Calavi</span><br>
+            Womey, rue de la pharmacie Vallée Beraca, non loin du marché<br><br>
+            <span class="site-tag">Site de Cotonou</span><br>
+            Guinkomey, rue pavé, en face de l'ex Ciné Vogue</div></div>
         <div class="info-card"><i class="fa-solid fa-phone"></i>
           <div><h3>Téléphone</h3><a href="tel:+2290192515959">+229 01 92 51 59 59</a><br>
             <a href="tel:+2290167995756">+229 01 67 99 57 56</a></div></div>
@@ -702,7 +752,7 @@ footer i{color:var(--gold);margin-right:8px}
         <p>Remplissez le formulaire, puis choisissez comment l'envoyer.</p>
 
         <div class="privacy-note">
-          <i class="fa-solid fa-lock"></i> Vos données (nom, téléphone, email, filière) sont
+          <i class="fa-solid fa-lock"></i> Vos données (nom, téléphone, email, filière, site) sont
           utilisées <strong>uniquement</strong> pour traiter votre demande. Elles ne sont ni vendues,
           ni partagées. <a href="#" data-modal="modalPrivacy">En savoir plus</a>
         </div>
@@ -720,6 +770,14 @@ footer i{color:var(--gold);margin-right:8px}
               <option>Arts pâtissiers & Boulangerie</option>
               <option>Service en restauration</option>
               <option>Bar-restaurant</option>
+              <option>Décoration évènementielle 🆕</option>
+            </select>
+          </div>
+          <div><label>Site souhaité *</label>
+            <select name="site" required>
+              <option value="">— Choisir un site —</option>
+              <option>Calavi (Womey)</option>
+              <option>Cotonou (Guinkomey)</option>
             </select>
           </div>
           <div><label>Message</label><textarea name="message" rows="4" placeholder="Votre message..."></textarea></div>
@@ -741,13 +799,13 @@ footer i{color:var(--gold);margin-right:8px}
   </div>
 </section>
 
-<!-- ===== Footer : LOGO officiel (fondu dans le bleu nuit) ===== -->
+<!-- ===== Footer ===== -->
 <footer>
   <div class="container footer-grid">
     <div>
       <img src="images/logo.png" alt="Logo EHR" class="footer-logo">
-      <p style="font-size:.9rem">Formez-vous en restauration chez nous et devenez le professionnel
-        que le monde de l'hôtellerie recherche.</p>
+      <p style="font-size:.9rem">Formez-vous en restauration et décoration évènementielle chez nous
+        et devenez le professionnel que le monde de l'hôtellerie recherche.</p>
       <p class="footer-slogan">Former aujourd'hui • Exceller demain</p>
       <div class="socials" style="margin-top:18px">
         <a href="https://www.facebook.com/ehrbenin" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -770,17 +828,20 @@ footer i{color:var(--gold);margin-right:8px}
     <div>
       <h3>Contact</h3>
       <ul>
-        <li><i class="fa-solid fa-location-dot"></i>Abomey-Calavi, Womey — rue de la pharmacie Vallée Beraca</li>
-        <li><i class="fa-solid fa-phone"></i>+229 01 92 51 59 59</li>
+        <li><i class="fa-solid fa-location-dot"></i><strong>Calavi :</strong> Womey, rue de la pharmacie Vallée Beraca</li>
+        <li><i class="fa-solid fa-location-dot"></i><strong>Cotonou :</strong> Guinkomey, rue pavé, face à l'ex Ciné Vogue</li>
+        <li><i class="fa-solid fa-phone"></i>+229 01 92 51 59 59 / 01 67 99 57 56</li>
         <li><i class="fa-solid fa-envelope"></i>ehr.cika@gmail.com</li>
-        <li><i class="fa-solid fa-calendar"></i>Rentrée : 17 septembre 2026</li>
+        <li><i class="fa-solid fa-calendar"></i>Rentrées : 17 sept. & 22 oct. 2026</li>
       </ul>
     </div>
   </div>
   <div class="container" style="text-align:center;padding-bottom:22px">
     <p class="legal-links">
       <a href="#" data-modal="modalLegal">Mentions légales</a> ·
-      <a href="#" data-modal="modalPrivacy">Politique de confidentialité</a>
+      <a href="#" data-modal="modalPrivacy">Politique de confidentialité
+        <span data-privacy-version>v1.1</span></a> —
+      mise à jour du <span data-privacy-date>22 octobre 2025</span>
     </p>
   </div>
   <div class="copy">© <span id="year"></span> EHR — École de l'Hôtellerie et de la Restauration. Tous droits réservés.</div>
@@ -796,7 +857,8 @@ footer i{color:var(--gold);margin-right:8px}
     <h3>Mentions légales</h3>
     <h4>Éditeur du site</h4>
     <p><strong>EHR — École de l'Hôtellerie et de la Restauration</strong><br>
-      Abomey-Calavi, Womey — rue de la pharmacie Vallée Beraca, non loin du marché<br>
+      Site de Calavi : Womey, rue de la pharmacie Vallée Beraca, non loin du marché<br>
+      Site de Cotonou : Guinkomey, rue pavé, en face de l'ex Ciné Vogue<br>
       Téléphone : +229 01 92 51 59 59 / +229 01 67 99 57 56<br>
       Email : ehr.cika@gmail.com</p>
     <h4>Statut et identification</h4>
@@ -815,22 +877,27 @@ footer i{color:var(--gold);margin-right:8px}
   </div>
 </div>
 
-<!-- ===== MODALE : POLITIQUE DE CONFIDENTIALITÉ ===== -->
+<!-- ===== MODALE : POLITIQUE DE CONFIDENTIALITÉ (version + date AUTO) ===== -->
 <div class="modal-overlay" id="modalPrivacy" role="dialog" aria-modal="true">
   <div class="modal">
     <button class="close" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
     <h3>Politique de confidentialité</h3>
-    <p style="font-size:.85rem;color:var(--muted)">Conformément à la loi n° 2017-20 du 20 avril 2018
-      portant Code du numérique en République du Bénin, l'EHR s'engage à protéger vos données
-      personnelles.</p>
+
+    <div class="privacy-meta">
+      <i class="fa-solid fa-shield-halved" style="color:var(--gold)"></i>
+      Version <strong data-privacy-version>v1.1</strong> —
+      Dernière mise à jour : <strong data-privacy-date>22 octobre 2025</strong>.
+      Conformément à la loi n° 2017-20 du 20 avril 2018 portant Code du numérique
+      en République du Bénin, l'EHR s'engage à protéger vos données personnelles.
+    </div>
 
     <h4>1. Responsable du traitement</h4>
-    <p>EHR — École de l'Hôtellerie et de la Restauration, Abomey-Calavi, Womey, rue de la
-      pharmacie Vallée Beraca. Contact : ehr.cika@gmail.com — +229 01 92 51 59 59.</p>
+    <p>EHR — École de l'Hôtellerie et de la Restauration, Abomey-Calavi (Womey) et Cotonou (Guinkomey).
+      Contact : ehr.cika@gmail.com — +229 01 92 51 59 59.</p>
 
     <h4>2. Données collectées</h4>
     <ul>
-      <li>Via le formulaire : nom, téléphone, email (facultatif), filière souhaitée, message.</li>
+      <li>Via le formulaire : nom, téléphone, email (facultatif), filière souhaitée, site choisi, message.</li>
       <li>Aucune donnée sensible n'est collectée.</li>
       <li>Le site n'utilise <strong>aucun cookie de pistage</strong> ni outil de mesure d'audience.</li>
     </ul>
@@ -868,12 +935,56 @@ footer i{color:var(--gold);margin-right:8px}
       votre appareil vers nos canaux officiels (email / WhatsApp). Le personnel de l'EHR est
       tenu à la confidentialité des informations reçues.</p>
 
-    <p style="margin-top:18px;font-size:.82rem;color:var(--muted)">Dernière mise à jour :
-      <em>[à dater à la publication]</em></p>
+    <h4>9. Historique des versions</h4>
+    <ul class="changelog" id="privacyChangelog"></ul>
+
+    <script type="text/plain" style="display:none">
+      /* Historique généré automatiquement par la configuration PRIVACY_POLICY
+         située dans le script en bas de page. Ne pas modifier ici. */
+    </script>
   </div>
 </div>
 
 <script>
+/* ============================================================
+   🔐 SYSTÈME DE VERSIONNING AUTOMATIQUE — POLITIQUE DE CONFIDENTIALITÉ
+   (conformité APDP — apdp.bj)
+   ------------------------------------------------------------
+   QUAND VOUS AJOUTEZ / MODIFIEZ DES DONNÉES COLLECTÉES :
+   1) Mettez à jour le texte de la modale ci-dessus (sections 2, 3…)
+   2) Ici, incrémentez "version" (ex. 1.1 → 1.2)
+   3) Mettez à jour "lastUpdated" (format AAAA-MM-JJ)
+   4) Ajoutez une entrée EN PREMIER dans "changelog"
+   → La version, la date et l'historique s'affichent alors
+     AUTOMATIQUEMENT dans la modale et le pied de page.
+============================================================ */
+const PRIVACY_POLICY = {
+  version: "1.1",
+  lastUpdated: "2025-10-22",
+  changelog: [
+    { v: "1.1", date: "2025-10-22",
+      note: "Ajout du champ « Site souhaité » (Calavi / Cotonou) au formulaire d'inscription ; ouverture du site de Cotonou (Guinkomey)." },
+    { v: "1.0", date: "2025-09-17",
+      note: "Version initiale : collecte du nom, téléphone, email (facultatif), filière et message — envoi par email ou WhatsApp." }
+  ]
+};
+
+function applyPrivacyMeta(){
+  const fmt = iso => {
+    const d = new Date(iso + "T00:00:00");
+    return isNaN(d) ? iso
+      : d.toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' });
+  };
+  document.querySelectorAll('[data-privacy-date]').forEach(el => el.textContent = fmt(PRIVACY_POLICY.lastUpdated));
+  document.querySelectorAll('[data-privacy-version]').forEach(el => el.textContent = 'v' + PRIVACY_POLICY.version);
+  const log = document.getElementById('privacyChangelog');
+  if (log) {
+    log.innerHTML = PRIVACY_POLICY.changelog.map(e =>
+      `<li><strong>v${e.v} — ${fmt(e.date)} :</strong> ${e.note}</li>`).join('');
+  }
+}
+applyPrivacyMeta();
+
 // ===== Splash =====
 let splashHidden=false;
 function hideSplash(){
@@ -917,49 +1028,8 @@ Je souhaite m'inscrire / avoir des informations.
 👤 Nom : ${f.nom.value.trim()}
 📞 Téléphone : ${f.telephone.value.trim()}${f.email.value.trim()?`
 📧 Email : ${f.email.value.trim()}`:''}
-🎓 Filière : ${f.filiere.value}${f.message.value.trim()?`
-💬 Message : ${f.message.value.trim()}`:''}`;
-}
-
-// ===== ENVOI PAR EMAIL =====
-document.getElementById('formInscription').addEventListener('submit',function(e){
-  e.preventDefault();
-  const f=this;
-  if(!f.checkValidity()){f.reportValidity();return;}
-  const sujet='Demande d\'inscription — '+f.filiere.value;
-  window.location.href='mailto:ehr.cika@gmail.com'
-    +'?subject='+encodeURIComponent(sujet)
-    +'&body='+encodeURIComponent(construireMessage(f));
-});
-
-// ===== ENVOI VIA WHATSAPP =====
-document.getElementById('btnWhatsapp').addEventListener('click',function(){
-  const f=document.getElementById('formInscription');
-  if(!f.checkValidity()){f.reportValidity();return;}
-  window.open('https://wa.me/2290192515959?text='+encodeURIComponent(construireMessage(f)),'_blank');
-});
-</script>
-</body>
-</html>f)),'_blank');
-});
-</script>
-</body>
-</html>n'); });
-  m.querySelector('.close').addEventListener('click',()=>m.classList.remove('open'));
-});
-document.addEventListener('keydown',e=>{
-  if(e.key==='Escape') document.querySelectorAll('.modal-overlay.open').forEach(m=>m.classList.remove('open'));
-});
-
-// ===== Construction automatique du message =====
-function construireMessage(f){
-  return `Bonjour EHR 👋
-Je souhaite m'inscrire / avoir des informations.
-
-👤 Nom : ${f.nom.value.trim()}
-📞 Téléphone : ${f.telephone.value.trim()}${f.email.value.trim()?`
-📧 Email : ${f.email.value.trim()}`:''}
-🎓 Filière : ${f.filiere.value}${f.message.value.trim()?`
+🎓 Filière : ${f.filiere.value}
+📍 Site : ${f.site.value}${f.message.value.trim()?`
 💬 Message : ${f.message.value.trim()}`:''}`;
 }
 
